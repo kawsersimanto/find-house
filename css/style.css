@@ -1,238 +1,107 @@
-body{
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    color: #0f2656;
+:root {
+  --primary-color: #0abde3;
+  --black-color: #202020;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
 }
 /*Header start*/
-header{
-    padding: 10px 0 7px;
-    border-bottom: 2px solid #f0f2f4;
-    /*border: 1px solid teal;*/
 
-}
-.wrapper {
-  width: 90%;
-  /*border: 1px solid;*/
-  margin: 0 auto;
-  overflow: hidden;
+header {
+  padding: 10px 0 7px;
+  border-bottom: 2px solid #f0f2f4;
 }
 
-.logo {
-    float: left;
-    width: 11%;
-   /* border: 1px solid blue;*/
-}
-.logo img{
-
-    width: 100%;
-}
-.menu {
-    float: right;
-    width: 60%;
-    /*border: 1px solid blue;*/
-}
-.menu ul{
-
-    float: right;
+.navbar-nav {
+  padding: 10px 0;
+  width: 100%;
+  justify-content: flex-end;
 }
 
-.menu ul li{
-
-    list-style: none;
-    float: left;
-
-}
-.menu ul li a{
-    font-size: 18px;
-    color: #0f2656;
-    text-decoration: none;
-    margin: 0 25px;
-    display: inline-block;
-    transition: .3s;
-    
-
-}
-.menu ul li a:hover{
-
-    color: #008aff;
+.nav-link {
+  color: #0f2656;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
 }
 
-.menu ul li:last-child a{
-    margin-right: 0;
+.navbar-brand {
+  min-width: 15%;
 }
 
-
+.navbar-brand img {
+  width: 100%;
+}
 
 /*Header end*/
+
 /*Banner Start*/
 
-.banner{
-
-    padding: 50px 0;
-
+.banner {
+  padding: 80px 0;
 }
-.wrapper-2{
-    width: 60%;
-    /*border: 1px solid red;*/
-    margin: 0 auto;
+.b-content {
+  text-transform: capitalize;
 }
-.b-content{
-    text-align: center;
-}
-.b-content h1{
-
-    font-size: 50px;
-    font-weight: 700;
-}
-.sky{
-
-    color:  #008aff;
-}
-.b-content p{
-
-    line-height: 25px;
-    margin: 35px 0;
-}   
-
-.b-img{
-
-   width: 75%;
- /*  border: 1px solid rebeccapurple;*/
-   margin: 0 auto;
-
-}
-.b-img img{
-
-    width: 100%;
+.b-content h1 {
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-weight: 600;
 }
 
+.btn {
+  color: #fff;
+  text-transform: capitalize;
+  border: 1px solid var(--primary-color);
+  border-radius: 40px;
+  background-color: var(--primary-color);
+  padding: 15px 50px;
+}
 
+.anywhere {
+  text-transform: capitalize;
+  font-size: 50px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
 
+.b-content p {
+  line-height: 25px;
+  margin: 35px 0;
+}
 
 /*Banner end*/
-/*Success Start*/
-.success{
 
-    padding: 50px 0;
-
-}
-.s-content{
-
-    overflow: hidden;
-
-}
-.s-left{
-    width: 45%;
-    /*border: 1px solid blue;*/
-    float: left;
-    text-align: right;
-    padding-left: 22px;
-}
-.s-left h2{
-
-    font-size: 45px;
-    font-weight: 700;
-    color: #f15767;
-    margin: 0;
-    
-}
-.s-left p{
-
-    line-height: 25px;
-    margin:5px 0 0 ;
-
+.info {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 35px;
 }
 
-.s-right{
-    width: 45%;
-   /* border: 1px solid blue;*/
-    float: right;
-    padding-right: 22px;
-}
-.s-right h1{
-
-    margin: 0;
-    font-size: 45px;
+.section-name {
+  text-align: center;
+  font-size: 60px;
+  display: inline-block;
+  text-transform: capitalize;
+  border-bottom: 5px solid var(--primary-color);
 }
 
-
-
-/*Success end*/
-/*Feature Start*/
-
-.feature{
-
+.box-shadow {
+  border-radius: 40px;
+  box-shadow: 28px 21px 61px 13px rgba(0, 0, 0, 0.59);
 }
 
-.f-content{
-
-
+.loaction-input {
+  border-radius: 40px;
+  border: 2px solid var(--primary-color);
+  font-size: 20px;
 }
 
-.single{
-
-    width: 29%;
-    
-    padding: 10px 10px 35px;
-    float: left;
-    margin-right: 25px;
+.loaction-input:focus {
+  outline: none;
 }
-.single:last-child{
-    margin-right: 0;
-}
-.pink{
-
-    background-color: #fdebed;
-}
-.green{
-    background-color: #ebf9f4;
-}
-.yellow{
-    background-color: #fff7e8;
-}
-
-.f-img{
-
-
-}
-
-.f-img img{
-
-    width: 100%;
-
-}
-.single h2{
-
-    font-size: 23px;
-    margin: 15px 0;
-}
-.single p{
-
-    margin: 0;
-    line-height: 25px;
-
-}
-
-/*Feature end*/
-/* footer start  */
-footer{
-    text-align: center;
-    background: #008AFF;
-    color: rgba(255, 255, 255, 0.5);
-    padding: 5px;
-    
-}
-footer p a{
-    color: white;
-    text-decoration: none;
-    letter-spacing: .1rem;
-    letter-spacing: 0.3em;
-    font-weight: bold;
-}
-/* footer end  */
-
-
-
